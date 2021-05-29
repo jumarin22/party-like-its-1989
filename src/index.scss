@@ -7,6 +7,64 @@ html {
 }
 
 body {
-  margin: 0;
   min-height: 100%;
+  background-color: lightblue;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: darkviolet 0.3rem 0.3rem;
+}
+
+.subtitle {
+  text-align: center;
+  justify-content: right;
+  font-family: 'Permanent Marker', cursive;
+  font-size: x-large;
+}
+
+article {
+  margin: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+img {
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: darkviolet -0.5rem 0.5rem;
+  border: medium solid black;
+  max-height: 80%;
+}
+
+section {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 0;
+}
+
+h2 {
+  padding: 0.5rem;
+  border: medium black solid;
+  text-align: center;
+  margin-top: 1rem;
+  box-shadow: darkviolet 0.5rem -0.5rem;
+  background-color: pink;
+}
+
+p {
+  padding: 0.5rem;
+  max-width: 100%;
+  text-align: justify;
+  border: medium solid black;
+  box-shadow: darkviolet 0.5rem 0.5rem;
+  background-color: pink;
 }

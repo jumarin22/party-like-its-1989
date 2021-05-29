@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Header from './components/Header'
 
 export class App extends Component {
   state = {
@@ -21,19 +22,25 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.results.map(movie => {
-          return (
-            <div key={movie.id}>
-              <p>{movie.title}</p>
-              <img
-                src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`}
-              ></img>
-              <p>{movie.overview}</p>
-            </div>
-          )
-        })}
-      </div>
+      <>
+        <Header />
+        <div className="main">
+          {this.state.results.map(movie => {
+            return (
+              <article key={movie.id}>
+                <img
+                  className="poster"
+                  src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`}
+                ></img>
+                <section>
+                  <h2 className="title">{movie.title}</h2>
+                  <p className="overview">{movie.overview}</p>
+                </section>
+              </article>
+            )
+          })}{' '}
+        </div>
+      </>
     )
   }
 }
