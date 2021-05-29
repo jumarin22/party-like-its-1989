@@ -1,5 +1,5 @@
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1 monospace;
 }
 
 html {
@@ -61,9 +61,8 @@ h2 {
 }
 
 p {
-  padding: 0.5rem;
+  padding: 1rem;
   max-width: 100%;
-  text-align: justify;
   border: medium solid black;
   box-shadow: darkviolet 0.3rem 0.3rem;
   background-color: pink;
