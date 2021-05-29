@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
+import background from './seamless-background-80s11-.jpg'
 
 export class App extends Component {
   state = {
@@ -22,7 +23,7 @@ export class App extends Component {
 
   render() {
     return (
-      <>
+      <div style={{ backgroundImage: `url(${background})` }}>
         <Header />
         <div className="main">
           {this.state.results.map(movie => {
@@ -40,7 +41,7 @@ export class App extends Component {
             )
           })}{' '}
         </div>
-      </>
+      </div>
     )
   }
 }

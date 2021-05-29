@@ -1,45 +1,67 @@
 :root {
   font: 16px / 1 monospace;
 }
-
+* {
+  padding: 0px;
+  margin: 0px;
+}
 html {
   height: 100%;
 }
 
 body {
   min-height: 100%;
-  background-color: lightblue;
+  background-image: '/seamless-background-80s11-.jpg';
 }
 
 .main {
-  margin: auto;
+  margin: 1rem;
+  margin-bottom: 0rem;
+  padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: auto;
+  justify-content: space-evenly;
+}
+
+header {
+  margin-bottom: 1rem;
 }
 
 h1 {
+  padding-top: 1rem;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
-  text-shadow: darkviolet 0.3rem 0.3rem;
+  text-shadow: lightseagreen 0.3rem 0.3rem;
 }
 
 .subtitle {
-  text-align: center;
+  margin: auto;
   justify-content: right;
   font-family: 'Permanent Marker', cursive;
   font-size: x-large;
+  background-color: lightseagreen;
+  border-radius: 1rem;
+  width: fit-content;
 }
 
 article {
   display: flex;
+  padding-bottom: 1rem;
   flex-wrap: wrap;
-  max-width: 49%;
+  max-width: 45%;
+  margin-bottom: 1rem;
+  background-color: rgb(173, 216, 230, 0.6);
+  box-shadow: black 0.5rem 0.5rem 3rem;
+  border-width: 0.3rem;
+  border-style: outset;
+  align-content: center;
+  justify-content: space-around;
 }
 
 img {
   margin: auto;
+  margin-right: 0;
   margin-top: 1rem;
   box-shadow: darkviolet -0.3rem 0.3rem;
   border: medium solid black;
@@ -50,6 +72,11 @@ section {
   max-width: 60%;
   margin: auto;
   margin-top: 0;
+  margin-left: 1rem;
+}
+
+.overview {
+  padding: 2rem;
 }
 
 h2 {
@@ -63,19 +90,19 @@ h2 {
 
 p {
   padding: 0.5rem;
-  max-height: min-content;
+  padding-bottom: auto;
   border: medium solid black;
   box-shadow: darkviolet 0.3rem 0.3rem;
   background-color: pink;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   article {
     max-width: 100%;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 560px) {
   article {
     max-height: 20%;
   }
