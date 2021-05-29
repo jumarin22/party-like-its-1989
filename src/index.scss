@@ -25,23 +25,24 @@ body {
 
 header {
   margin-bottom: 1rem;
+  background-color: #2298b4;
+  text-shadow: hsl(192, 68%, 30%) 0.2rem 0.2rem 0.1rem;
+  box-shadow: #04222d 0.5rem 0.5rem 2rem;
 }
 
 h1 {
-  padding-top: 1rem;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
-  text-shadow: lightseagreen 0.3rem 0.3rem;
 }
 
 .subtitle {
+  text-align: center;
+  padding-bottom: 1rem;
   margin: auto;
-  justify-content: right;
   font-family: 'Permanent Marker', cursive;
   font-size: x-large;
-  background-color: lightseagreen;
-  border-radius: 1rem;
-  width: fit-content;
 }
 
 article {
@@ -50,8 +51,8 @@ article {
   flex-wrap: wrap;
   max-width: 45%;
   margin-bottom: 1rem;
-  background-color: rgb(173, 216, 230, 0.7);
-  box-shadow: black 0.5rem 0.5rem 3rem;
+  background-color: hsl(192, 68%, 42%, 0.6);
+  box-shadow: #04222d 0.5rem 0.5rem 2rem;
   border-width: 0.3rem;
   border-style: outset;
   align-content: center;
@@ -62,8 +63,8 @@ img {
   margin: auto;
   margin-right: 0;
   margin-top: 1rem;
-  box-shadow: darkviolet -0.3rem 0.3rem 0.1rem;
-  border: medium solid black;
+  box-shadow: hsl(192, 68%, 20%) 0.3rem 0.3rem 0.3rem;
+  border: medium solid #04222d;
   max-height: 80%;
 }
 
@@ -75,21 +76,22 @@ section {
 }
 
 h2 {
+  color: black;
   padding: 0.5rem;
-  border: medium black solid;
+  border: medium #04222d solid;
   text-align: center;
   margin-top: 1rem;
-  box-shadow: darkviolet 0.3rem -0.3rem 0.1rem;
-  background-color: pink;
-  text-shadow: lightseagreen 0.05rem 0.04rem;
+  box-shadow: hsl(192, 68%, 20%) 0.3rem 0.3rem 0.3rem;
+  background-color: #ef7c96;
+  text-shadow: hsl(346, 75%, 60%) 0.2rem 0.2rem;
 }
 
 p {
   padding: 1rem;
   padding-bottom: 1.5rem;
-  border: medium solid black;
-  box-shadow: darkviolet 0.3rem 0.3rem 0.1rem;
-  background-color: lightseagreen;
+  border: medium solid #04222d;
+  box-shadow: hsl(192, 68%, 20%) 0.3rem 0.3rem 0.3rem;
+  background-color: hsl(173, 88%, 43%);
 }
 
 @media screen and (max-width: 1200px) {
