@@ -12,9 +12,11 @@ body {
 }
 
 .main {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  margin: auto;
 }
 
 h1 {
@@ -31,10 +33,9 @@ h1 {
 }
 
 article {
-  margin: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  max-width: 49%;
 }
 
 img {
@@ -46,7 +47,7 @@ img {
 }
 
 section {
-  max-width: 50%;
+  max-width: 60%;
   margin: auto;
   margin-top: 0;
 }
@@ -61,9 +62,24 @@ h2 {
 }
 
 p {
-  padding: 1rem;
-  max-width: 100%;
+  padding: 0.5rem;
+  max-height: min-content;
   border: medium solid black;
   box-shadow: darkviolet 0.3rem 0.3rem;
   background-color: pink;
+}
+
+@media screen and (max-width: 1000px) {
+  article {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  article {
+    max-height: 20%;
+  }
+  img {
+    max-width: 30%;
+  }
 }
