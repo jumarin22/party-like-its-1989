@@ -31,7 +31,7 @@ header {
 }
 
 h1 {
-  padding: 1rem;
+  padding: 1.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
@@ -51,7 +51,7 @@ article {
   flex-wrap: wrap;
   max-width: 45%;
   margin-bottom: 1rem;
-  background-color: hsl(192, 68%, 42%, 0.6);
+  background-color: hsl(192, 68%, 42%, 0.93);
   box-shadow: #04222d 0.5rem 0.5rem 2rem;
   border-width: 0.3rem;
   border-style: outset;
@@ -83,7 +83,7 @@ h2 {
   margin-top: 1rem;
   box-shadow: hsl(192, 68%, 20%) 0.3rem 0.3rem 0.3rem;
   background-color: #ef7c96;
-  text-shadow: hsl(346, 75%, 60%) 0.2rem 0.2rem;
+  text-shadow: hsl(346, 75%, 60%) 0.2rem 0.2rem 0.15rem;
 }
 
 p {
@@ -91,7 +91,7 @@ p {
   padding-bottom: 1.5rem;
   border: medium solid #04222d;
   box-shadow: hsl(192, 68%, 20%) 0.3rem 0.3rem 0.3rem;
-  background-color: hsl(173, 88%, 43%);
+  background-color: hsl(173, 88%, 45%);
 }
 
 @media screen and (max-width: 1200px) {
