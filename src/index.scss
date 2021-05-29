@@ -81,8 +81,8 @@ h2 {
   text-align: center;
   margin-top: 1rem;
   box-shadow: darkviolet 0.3rem -0.3rem 0.1rem;
-  background-color: lightseagreen;
-  text-shadow: pink 0.05rem 0.04rem;
+  background-color: pink;
+  text-shadow: lightseagreen 0.05rem 0.04rem;
 }
 
 p {
@@ -90,8 +90,7 @@ p {
   padding-bottom: 1.5rem;
   border: medium solid black;
   box-shadow: darkviolet 0.3rem 0.3rem 0.1rem;
-  background-color: pink;
-  // border-style: outset;
+  background-color: lightseagreen;
 }
 
 @media screen and (max-width: 1200px) {
