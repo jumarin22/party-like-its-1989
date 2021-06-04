@@ -39,7 +39,7 @@ export class App extends Component {
                 </section>
               </article>
             )
-          })}{' '}
+          })}
         </div>
       </div>
     )
