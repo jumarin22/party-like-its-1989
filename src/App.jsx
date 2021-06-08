@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
+import Movie from './components/Movie'
 import background from './seamless-background-80s11-.jpg'
 
 export class App extends Component {
@@ -27,18 +28,7 @@ export class App extends Component {
         <Header />
         <div className="main">
           {this.state.results.map(movie => {
-            return (
-              <article key={movie.id}>
-                <img
-                  className="poster"
-                  src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`}
-                ></img>
-                <section>
-                  <h2 className="title">{movie.title}</h2>
-                  <p className="overview">{movie.overview}</p>
-                </section>
-              </article>
-            )
+            return <Movie obj={movie} />
           })}
         </div>
       </div>
